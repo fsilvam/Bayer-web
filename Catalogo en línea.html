@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Catalógo en línea</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+<body>
+    <header>
+        <div class="top">
+            <IMG SRC="./Icons/bayer.png" height="192px" width="192px"> 
+            <a href="./check-out.html">
+                <span>Carro<img src="./Icons/carrito.png" width="50px"></span> 
+            </a>
+            <span>Adminitrador<img src="./Icons/person.png" width="50px" ></span> 
+            <a href="./index.html">
+                <span>Cerrar sesión<img src="./Icons/cerrar-sesion.png" width="50px" ></span>
+            </a>
+        </div>
+    </header> 
+<main>
+
+    <div class="imagen-contenedor">
+        <img src="./Icons/fondo-catalogo.jpg" />
+        <div class="texto-encima">Catalogo</div>
+      </div>
+
+    <div class="container">
+        <div class="border">
+            <div class="contenedor">
+                <div>
+                    <label for="especie">Especie:</label>
+                    <select name="especie" id="especie">
+                    <option value="arveja">Arveja</option>
+                    <option value="cebolla">Cebolla</option>
+                    <option value="berenjena">Berenjena</option>
+                    <option value="maiz-dulce">Maiz Dulce</option>
+                    <option value="melon">Melon</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="tipo">Tipo:</label>
+                    <select name="tipo" id="tipo">
+                    <option value="">-</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="variedad">Variedad:</label>
+                    <select name="variedad" id="variedad">
+                    <option value="">-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="right">                 
+                <input type="submit" value="Buscar" class="boton">            
+            </div>
+        
+        <br>
+
+    <div>
+            <TABLE BORDER class="table">
+                <TR><TD>Especie</TD><TD>Tipo</TD><td>Variedad</td><td>Envase</td><td>Precio</td>
+                    <td>Cantidad</td><td>Agregar</td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Mercedes</td><td>Lata 500g</td>
+                    <td>$190.416</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Century</td><td>Lata 500g</td>
+                    <td>$198.024</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Caballero</td><td>Lata 500g</td>
+                    <td>$147.937</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Candy</td><td>Lata 500g</td>
+                    <td>$175.452</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Tormes</td><td>Lata 500g</td>
+                    <td>$117.104</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Mississipi</td><td>100 MK</td>
+                    <td>$68.400</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                </TR>
+            </TABLE>
+    </div>
+</div>
+    </div>
+    </main>
+    <footer>
+        <div class="container">
+        <br>
+        <div class="pie">
+            <p class="inherit">Valor mínimo de la compra: $500.000 + IVA</p>
+            <p>Los precios expresiones NO incluyen impuestos, tasas, ni gastos de transporte.</p>
+            <p>Precios y condiciones de venta están sujetos a variación sin previo aviso.</p>
+            <p>Una vez entregada la semilla, no se aceptan devoluciones.</p>
+            <p>La orden de compra no garantiza la reserva y precio de la semilla.</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
