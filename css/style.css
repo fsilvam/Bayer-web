@@ -1,16 +1,15 @@
-.border{   
-    position: relative;
-    background-color: #89d329; 
+.border_1{   
     color: #10384f;
     padding: 5px;  
-    width: 100%;
-    box-sizing: content-box;
+    width: 90%;
+    margin: auto;
 }  
 
-.container{
-    padding: 5px;
+.container_1{
+    background-color: #89d329; 
+    padding: 10px;
     width: 100%;
-    box-sizing: content-box;
+    color: #10384f;
 }
 
 .contenedor{
