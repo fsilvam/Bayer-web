@@ -1,36 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="esp">
     <head>
-        <title>Catalógo en línea</title>
         <meta charset="UTF-8" />
+        <title>Catalógo en línea</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </head>
 
 <body>
+
     <header>
-        <div class="top">
-            <IMG SRC="./Icons/bayer.png" height="192px" width="192px"> 
-            <a href="./check-out.html">
-                <span>Carro<img src="./Icons/carrito.png" width="50px"></span> 
-            </a>
-            <span>Adminitrador<img src="./Icons/person.png" width="50px" ></span> 
-            <a href="./index.html">
-                <span>Cerrar sesión<img src="./Icons/cerrar-sesion.png" width="50px" ></span>
-            </a>
+        <div class="container-fluid">
+            <div>
+                <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+                    <div class="container-fluid">
+                        <a href="./index.html">
+                            <img src="./Icons/bayer-chiquito.png" align="left">
+                            </a>
+                        <button type="button"
+                            class="navbar-toggler"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#MenuNavegacion">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+        
+                    <div id="MenuNavegacion" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./check-out.html">Carrito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Perfil</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-nowrap" href="./index.html">Cerrar Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </header> 
-<main>
+    </header>
 
-    <div class="imagen-contenedor">
-        <img src="./Icons/fondo-catalogo.jpg" />
-        <div class="texto-encima">Catalogo</div>
-      </div>
+<br>
 
-    <div class="container">
+    <div class="banner">
+        <img class="imagen" src="./Icons/fondo-catalogo-grande.jpg">
+        <h1 class="texto-encima">Catalógo en línea</h1>
+    </div>
+
+    <div class="container"> 
+
         <div class="border">
+
             <div class="contenedor">
-                <div>
+                <div>   
                     <label for="especie">Especie:</label>
-                    <select name="especie" id="especie">
+                    <select name="especie" id="especie" class="select">
                     <option value="arveja">Arveja</option>
                     <option value="cebolla">Cebolla</option>
                     <option value="berenjena">Berenjena</option>
@@ -51,51 +83,102 @@
                     </select>
                 </div>
             </div>
-            <div class="right">                 
-                <input type="submit" value="Buscar" class="boton">            
-            </div>
-        
-        <br>
 
-    <div>
-            <TABLE BORDER class="table">
+            <br>
+
+            <div class="right">                 
+                <input type="submit" value="buscar" class="boton">            
+            </div>
+
+        <div width>
+            <TABLE class="table">
                 <TR><TD>Especie</TD><TD>Tipo</TD><td>Variedad</td><td>Envase</td><td>Precio</td>
                     <td>Cantidad</td><td>Agregar</td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Mercedes</td><td>Lata 500g</td>
-                    <td>$190.416</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$190.416</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button> <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Century</td><td>Lata 500g</td>
-                    <td>$198.024</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$198.024</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button> <input id="coso" type="number" min="0" value="0" size="1"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Caballero</td><td>Lata 500g</td>
-                    <td>$147.937</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$147.937</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button> <input id="coso" type="number" min="0" value="0" size="1"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem"></i></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Candy</td><td>Lata 500g</td>
-                    <td>$175.452</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$175.452</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button>  <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Tormes</td><td>Lata 500g</td>
-                    <td>$117.104</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$117.104</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button> <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Mississipi</td><td>100 MK</td>
-                    <td>$68.400</td><td><input type="number" min="0" value="0"></td><td><img src="./Icons/carrito.png" height="50px" width="50px" ></td>
+                    <td>$68.400</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                        </svg>
+                      </button> <input id="coso" type="number" min="0" value="0" width="50"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
                 </TR>
             </TABLE>
+        </div>
+
+        </div>
     </div>
-</div>
-    </div>
-    </main>
+
     <footer>
-        <div class="container">
-        <br>
         <div class="pie">
+            <br>
+            <br>
             <p class="inherit">Valor mínimo de la compra: $500.000 + IVA</p>
             <p>Los precios expresiones NO incluyen impuestos, tasas, ni gastos de transporte.</p>
             <p>Precios y condiciones de venta están sujetos a variación sin previo aviso.</p>
             <p>Una vez entregada la semilla, no se aceptan devoluciones.</p>
             <p>La orden de compra no garantiza la reserva y precio de la semilla.</p>
+            <br>
         </div>
-    </div>
     </footer>
+
 </body>
 </html>

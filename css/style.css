@@ -2,27 +2,31 @@
     position: relative;
     background-color: #89d329; 
     color: #10384f;
+    padding: 5px;  
+    width: 100%;
+    box-sizing: content-box;
 }  
+
+.container{
+    padding: 5px;
+    width: 100%;
+    box-sizing: content-box;
+}
+
 .contenedor{
     display: flex;    
-    justify-content: space-around;  }
-.titulo{
-    padding-left: 1rem;
+    justify-content: space-around; 
 }
-.titulo2{
-    padding-left: 1rem;
-    text-align: left;
-}
+
+input[type='number']{
+    width: 100px;
+} 
 .right{
     text-align: right;     
     padding-right: 1rem;     
-    margin-bottom: 20px;}
-.container{
-    margin: auto;
-    width: 100%;
-    }
+    margin-bottom: 20px;
+}
 .table{
-    width: 100%;
     color: #10384f;
     text-align: center;
     background-color: white;
@@ -31,6 +35,9 @@
     color: white;
     text-align: center;
     background-color: #10384f;
+    padding: 2px;
+    text-transform: uppercase;
+    line-height: 55%;
 }
 .top{
     display: flex;
@@ -41,19 +48,84 @@
 .boton{
     background-color: grey;
     color: white;
+    line-height: 100%;
+    text-transform: uppercase;
 }
 
-.imagen-contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+.imagen{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .texto-encima{
     position: absolute;
-    top: 10px;
+    top: 100px;
     left: 10px;
+    font: 12px;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-decoration: inherit;
-    text-transform: inherit;
+    font-size: 50px;
+    color: #10384f;
+}
+
+.utility-nav{
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 30px;
+    padding: 4px 12px 3px 0;
+}
+
+.boton{
+    color: white;
+    text-align: center;
+    background-color: #10384f;
+}
+
+.banner{
+    position: relative;
+    display:block;
+    margin:auto;
+    align-items: center;
+    height: auto;
+}
+
+.top-nav-bar {
+    text-align: right;
+    color: #10384f;
+    font-size: 12px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 4px 12px 3px 0;
+}
+
+.sesion{
+    background-color: 89D329;
+    margin: 32px;
+}
+
+.ul, li{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.utility-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.utility-outer{
+    padding: 0px 8px;
+}
+
+.utility-inner{
+    position: relative;
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 8px;
 }
