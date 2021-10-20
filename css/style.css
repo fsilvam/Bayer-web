@@ -4,17 +4,34 @@
     width: 90%;
     margin: auto;
 }  
+.parrafo{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
 
 .container_1{
     background-color: #89d329; 
     padding: 10px;
-    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     color: #10384f;
 }
-
-.contenedor{
+select{
+    width: 250px;
+}
+.contenedor_1{
     display: flex;    
-    justify-content: space-around; 
+    justify-content: space-between; 
+    margin-top: 1rem;
+    align-items: left;
+}
+
+option{
+    width: 100px;
 }
 
 input[type='number']{
@@ -25,11 +42,21 @@ input[type='number']{
     padding-right: 1rem;     
     margin-bottom: 20px;
 }
+.left{
+    text-align: left;     
+    padding-right: 1rem;     
+    margin-bottom: 20px;
+}
 .table{
     color: #10384f;
-    text-align: center;
+    text-align: left;
     background-color: white;
 }
+
+.prueba{
+        float: right;
+}
+
 .pie{
     color: white;
     text-align: center;
@@ -45,27 +72,33 @@ input[type='number']{
     color: #10384f;
 }
 .boton{
-    background-color: grey;
+    background-color: #10384f;
     color: white;
     line-height: 100%;
     text-transform: uppercase;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin-left: 1rem;
 }
 
-.imagen{
+.boton_2{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.imagen-1{
     display: block;
     max-width: 100%;
     height: auto;
 }
-.texto-encima{
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    font: 12px;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    color: #10384f;
-}
-
 .utility-nav{
     text-align: right;
     color: #fff;
@@ -78,16 +111,39 @@ input[type='number']{
     color: white;
     text-align: center;
     background-color: #10384f;
+    padding: 10px 10px 10px 10px;
 }
 
-.banner{
+.masmenos{
+    border: none;
+    outline: none;
+}
+
+.banner-1{
+    width: 100%;
+    background-size: cover;
     position: relative;
-    display:block;
-    margin:auto;
-    align-items: center;
-    height: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
+.banner-1::before{
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color: #00BEFF;
+    position: absolute;
+    opacity: 0.7;
+}
+.texto-encima{
+    position: absolute;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    color: #10384f;
+    display:flex;
+}
 .top-nav-bar {
     text-align: right;
     color: #10384f;

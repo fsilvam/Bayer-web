@@ -14,16 +14,16 @@
         <header>
             <div class="container-fluid">
                 <div>
-                    <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+                    <nav class="navbar navbar-expand-md navbar-light border-3 border-primary">                        
                         <div class="container-fluid">
                             <a href="./index.html">
                                 <img src="./Icons/bayer-chiquito.png" align="left">
-                                </a>
+                            </a>
                             <button type="button"
                                 class="navbar-toggler"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#MenuNavegacion">
-                                    <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon"></span>
                             </button>
                         </div>
             
@@ -46,58 +46,71 @@
 
         <br>
 
-        <div class="banner">
+        <div class="banner-1">
             <img class="imagen" src="./Icons/fondo-catalogo-grande.jpg">
             <h1 class="texto-encima">Detalle de la orden</h1>
         </div>
 
         <div class="container_1">
-                       
+            <h3 class="titulo2" align="left">Detalle de la compra</h2>
                     <TABLE  class="table">
                         <TR><TD>Especie</TD><TD>Tipo</TD><td>Variedad</td><td>Envase</td><td>Precio</td>
                             <td>Cantidad</td><td>Eliminar</td>
                         </TR>
-                        <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Mercedes</td><td>Lata 500g</td>
-                            <td>$190.416</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
-                        </TR>
-                        <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Century</td><td>Lata 500g</td>
-                            <td>$198.024</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
-                        </TR>
                         <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Caballero</td><td>Lata 500g</td>
-                            <td>$147.937</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
+                            <td>$147.937</td><td><input type="number" min="0" value="0"></td>
+                            <td><button class="boton_2"><i class="bi bi-trash" style="font-size: 2rem"></i></button></td>
                         </TR>
                         <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Candy</td><td>Lata 500g</td>
-                            <td>$175.452</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
-                        </TR>
-                        <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Tormes</td><td>Lata 500g</td>
-                            <td>$117.104</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
-                        </TR>
-                        <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Mississipi</td><td>100 MK</td>
-                            <td>$68.400</td><td><input type="number" min="0" value="0"></td><td><i class="bi bi-trash" style="font-size: 2rem"></i></td>
+                            <td>$175.452</td><td><input type="number" min="0" value="0"></td>
+                            <td><button class="boton_2"><i class="bi bi-trash" style="font-size: 2rem"></i></button></td>
                         </TR>
                     </TABLE>
-                    <div class="right"> 
-                        <a href="./Catalogo en línea.html">             
-                            <input type="submit" value="Continuar comprando" class="boton">   
-                        </a>            
-                    </div>      
+                    <br>
+        
+            <div>
+                <h4>Total del pedido: <input type="text" value="$498.841"> </h4>
+            </div>
+       
+            <br>
+
+            <div>
+                <h4>Fecha solicitada de recepción: 
+                <input type="date">
+                </h4>
+            </div>
+
+            <br>
+            
+            <div>
+                <h4>Comentario: </h4>
+                <textarea name="comentatios" id="1" cols="100" rows="5"></textarea>
+            </div>
+                    
+            <br>
+
+            <div class="right"> 
+                <a href="./Catalogo en línea.html" style="text-decoration:none">     
+                    <span class="boton">
+                        continuar comprando
+                    </span>  
+                </a>        
+                <a href="" style="text-decoration:none">             
+                    <span class="boton">
+                         confirmar orden
+                    </span>    
+                </a>            
+            </div>
         </div>
 
         <footer>    
                 <div class="pie">
-                <h3 class="titulo2" align="left">Detalle de la compra</h2>
-                    Total del pedido: <input type="text" value="$25.256.987">
                     <br><br>
                     <p class="inherit">Valor mínimo de la compra: $500.000 + IVA</p>
                     <p>Los precios expresiones NO incluyen impuestos, tasas, ni gastos de transporte.</p>
                     <p>Precios y condiciones de venta están sujetos a variación sin previo aviso.</p>
                     <p>Una vez entregada la semilla, no se aceptan devoluciones.</p>
-                    <p>La orden de compra no garantiza la reserva y precio de la semilla.</p>
-                        <div class="right"> 
-                            <a href="">             
-                                <input type="submit" value="Confirmar Orden" class="boton">   
-                            </a>            
-                        </div>  
+                    <p>La orden de compra no garantiza la reserva y precio de la semilla.</p>  
                 </div>
         </footer>
     </body>

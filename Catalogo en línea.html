@@ -15,16 +15,16 @@
     <header>
         <div class="container-fluid">
             <div>
-                <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+                <nav class="navbar navbar-expand-md navbar-light border-3 border-primary">
                     <div class="container-fluid">
                         <a href="./index.html">
                             <img src="./Icons/bayer-chiquito.png" align="left">
-                            </a>
+                        </a>
                         <button type="button"
                             class="navbar-toggler"
-                            data-bs-toggle="collapse"
+                            data-bs-toggle="collapse" 
                             data-bs-target="#MenuNavegacion">
-                                <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
         
@@ -50,19 +50,24 @@
 
 <br>
 
-    <div class="banner">
-        <img class="imagen" src="./Icons/fondo-catalogo-grande.jpg">
+    <div class="banner-1">
+        <img class="imagen-1" src="./Icons/fondo-catalogo-grande.jpg">
         <h1 class="texto-encima">Catalógo en línea</h1>
+    </div>
+
+    <div class="parrafo">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore nihil ipsam alias voluptates minus id possimus assumenda laboriosam reiciendis nam? Dignissimos ut dolorem iusto voluptates et impedit veritatis quis. Ducimus.</p>
     </div>
 
     <div class="container_1"> 
 
         <div class="border_1">
 
-            <div class="contenedor">
+            <div class="contenedor_1">
                 <div>   
                     <label for="especie">Especie:</label>
                     <select name="especie" id="especie" class="select">
+                    <option value="">-</option>
                     <option value="arveja">Arveja</option>
                     <option value="cebolla">Cebolla</option>
                     <option value="berenjena">Berenjena</option>
@@ -74,6 +79,7 @@
                     <label for="tipo">Tipo:</label>
                     <select name="tipo" id="tipo">
                     <option value="">-</option>
+                    <option value="">Cebolla híbrida dia intermedio</option>
                     </select>
                 </div>
                 <div>
@@ -82,13 +88,11 @@
                     <option value="">-</option>
                     </select>
                 </div>
+                <div class="right">                
+                    <input type="submit" value="buscar" class="boton">            
+                </div>
             </div>
 
-            <br>
-
-            <div class="right">                 
-                <input type="submit" value="buscar" class="boton">            
-            </div>
         </div>
 
         <div>
@@ -96,76 +100,40 @@
                 <TR><TD>Especie</TD><TD>Tipo</TD><td>Variedad</td><td>Envase</td><td>Precio</td>
                     <td>Cantidad</td><td>Agregar</td>
                 </TR>
-                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Mercedes</td><td>Lata 500g</td>
-                    <td>$190.416</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
-                        </svg>
-                      </button> <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
-                </TR>
-                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Corto</TD><td>Century</td><td>Lata 500g</td>
-                    <td>$198.024</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
-                        </svg>
-                      </button> <input id="coso" type="number" min="0" value="0" size="1"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
-                </TR>
+
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Caballero</td><td>Lata 500g</td>
-                    <td>$147.937</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <td>$147.937</td><td><button class="boton_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                        </svg>
+                    </button>
+                      <input id="coso" type="number" min="0" value="0" size="1">
+                      <button class="boton_2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
                         </svg>
-                      </button> <input id="coso" type="number" min="0" value="0" size="1"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem"></i></td>
+                    </button>
+                        </td><td><button class="boton_2"><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></button></td>
                 </TR>
                 <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Intermedio</TD><td>Candy</td><td>Lata 500g</td>
-                    <td>$175.452</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                    <td>$175.452</td><td>
+                        <button class="boton_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
+                            </svg>
+                        </button>
+                      <input id="coso" type="number" min="0" value="0">
+                      <button class="boton_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
                         </svg>
-                      </button>  <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
+                    </button>
+                        </td><td><button class="boton_2"><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></button></td>
                 </TR>
-                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Tormes</td><td>Lata 500g</td>
-                    <td>$117.104</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
-                        </svg>
-                      </button> <input id="coso" type="number" min="0" value="0"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
-                </TR>
-                <TR><TD>Cebolla</TD><TD>Cebolla Hibrída Día Largo</TD><td>Mississipi</td><td>100 MK</td>
-                    <td>$68.400</td><td><button type="button" class="btn btn-outline-secondary" onclick="suma()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
-                        </svg>
-                      </button> <input id="coso" type="number" min="0" value="0" width="50"> <button type="button" class="btn btn-outline-secondary" onclick="resta()">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"></path>
-                        </svg>
-                      </button></td><td><i class="bi bi-cart-plus-fill" style="font-size: 2rem" ></i></td>
-                </TR>
+      
+                
             </TABLE>
         </div>
-
-
     </div>
 
     <footer>
